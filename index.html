@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Frontend Mentor | Calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+<div class="calculator">
+
+
+<section class="theme--section">
+  <h2 class="calc">calc</h2>
+  <div class="theme">
+    <h4>THEME</h4>
+    <div class="theme--box">
+      <ul class="theme--box__numbers">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+      </ul>
+
+      <div class="theme--box__circles">
+        <div class="theme--box__circle1"></div>
+        <div class="theme--box__circle2"></div>
+        <div class="theme--box__circle3"></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<section class="display">
+  <div class="display--input">
+    <p class="display--input__text">399,981</p>
+  </div>
+
+</section>
+
+
+<section class="keys">
+  <div class="keys--container calculator__keys">
+    <button>7</button>
+    <button>8</button>
+    <button>9</button>
+    <button class="del" data-action="delete">DEL</button>
+    <button>4</button>
+    <button>5</button>
+    <button>6</button>
+    <button class ="keys--operator" data-action="add">+</button>
+    <button>1</button>
+    <button>2</button>
+    <button>3</button>
+    <button class ="keys--operator" data-action="subtract">-</button>
+    <button data-action="decimal">.</button>
+    <button>0</button>
+    <button class ="keys--operator" data-action="divide">/</button>
+    <button class ="keys--operator" data-action="multiply">&times;</button>
+    <button class="reset" data-action="clear">RESET</button>
+    <button class="equal" data-action="calculate">=</button>
+  <div>
+</section>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
