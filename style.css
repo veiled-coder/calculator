@@ -6,15 +6,67 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color:hsl(222,26%,31%) ;
-}
+    background-color:var(--main-bg);
+    
 /* *{ */
     /* border: 1px red solid; */
 /* } */
+}
 html {
     font-size: 62.5%;
     font-family: 'League Spartan', sans-serif;
     font-weight: 700;
+}
+:root,:root.theme1{
+    --main-bg:hsl(222,26%,31%);
+    --keypad-bg:hsl(223,31%,20%);
+    --display-bg:hsl(224,36%,15%);
+    --key-DR__bg:hsl(225,21%,49%);
+    --key-DR__shadow:hsl(224,28%,35%);
+    --Key-equal__bg:hsl(6,63%,50%);
+    --Key-equal__shadow:hsl(6,70%,34%);
+    --Key-gray__bg:hsl(30,25%,89%);
+    --key-gray__shadow:hsl(28,16%,65%);
+    --text-keypad__color:hsl(221,14%,31%);
+    --text-theme:hsl(0,0%,100%);
+    --text-equal:hsl(0,0%,100%);
+    --text-DR:hsl(0,0%,100%);
+
+
+}
+:root.theme2{
+    --main-bg:hsl(0,0%,90%);
+    --keypad-bg:hsl(0,5%,81%);
+    --display-bg:hsl(0,0%,93%);
+    --key-DR__bg:hsl(185,42%,37%);
+    --key-DR__shadow:hsl(185,58%,25%);
+    --Key-equal__bg:hsl(25,98%,40%);
+    --Key-equal__shadow:hsl(25,99%,27%);
+    --Key-gray__bg:hsl(45,7%,89%);
+    --key-gray__shadow:hsl(35,11%,61%);
+    --text-theme:hsl(60,10%,19%);
+    --text-equal:hsl(0,0%,100%);
+    --text-DR:hsl(0,0%,100%);
+    --text-keypad__color:hsl(60,10%,19%);
+   
+
+}
+:root.theme3{
+    --main-bg:hsl(268,75%,9%);
+    --keypad-bg:hsl(268,71%,12%);
+    --display-bg:hsl(268,71%,12%);
+    --key-DR__bg:hsl(281,89%,26%);
+    --key-DR__shadow:hsl(285,91%,52%);
+    --Key-equal__bg:hsl(176,100%,44%);
+    --Key-equal__shadow:hsl(177,92%,70%);
+    --Key-gray__bg:hsl(268,47%,21%);
+    --key-gray__shadow:hsl(290,70%,36%);
+    --text-theme:hsl(52,100%,62%);
+    --text-equal:hsl(198,20%,13%);
+    --text-DR:hsl(0,0%,100%);
+    --text-keypad__color:hsl(52,100%,62%);
+   
+
 }
 .calculator{
     height: 90vh;
@@ -29,8 +81,8 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: white;
-    
+    color: var(--text-theme);
+  
 }
 
 .theme{
@@ -53,7 +105,7 @@ html {
     position: relative;
     align-items: center;
     padding:  1%;
-    
+   
     
 }
 .theme--box__numbers{
@@ -65,7 +117,7 @@ html {
     position: absolute;
    bottom: 80%;
    width: 100%;
-   color: white;
+  
  
 }
 .theme--box__numbers li{
@@ -81,40 +133,49 @@ html {
     padding: 0 .1rem;
     position: relative;
 }
+ button{
+    border: transparent;
+}
 .theme--box__circle1{
-    background-color: red;
+    background-color: hsl(6,63%,50%);
     width: 20%;
     height: auto;
     padding-top: 20%;
     border-radius: 50%;
 }
 .theme--box__circle2{
-    background-color: rgb(115, 255, 0);
+    background-color: hsl(6,63%,50%);
     width: 20%;
     height: auto;
     padding-top: 20%;
-    border-radius: 50%
+    border-radius: 50%;
+    visibility: hidden;
+    
 }
 .theme--box__circle3{
-    background-color: rgb(32, 157, 206);
+    background-color: hsl(176,100%,44%);
     width: 20%;
     height: auto;
     padding-top: 20%;
-    border-radius: 50%
+    border-radius: 50%;
+    visibility: hidden;
 }
 .calc{
     font-size: 6vw;
+    color: var(--text-main__color);
+   
 }
 h4{
     font-size: 2.5vw;
+   color:var(--text-main__color);
 }
 .display{
     width: 100%;
     height: 12%;
-    background-color:  hsl(224, 36%, 15%);
+    background-color:  var(--display-bg);
     border-radius: 5px;
     position: relative;
-    color: white;
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -131,10 +192,11 @@ h4{
 }
 .display--input__text{
 font-size: 300%;
+color: var(--text-theme);
 /* margin-right: 5rem; */
 }
 .keys {
-    background-color:  hsl(224, 36%, 15%);
+    background-color:  var(--keypad-bg);
     
     width: 100%;
     border-radius: 5px;
@@ -157,19 +219,28 @@ border: none;
 }
 
 .keys--container button{
-    background-color: white;
+    background-color:var(--Key-gray__bg);
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
     font-size: 2rem;
+    color: var(--text-keypad__color);
+    box-shadow: 0rem 2px var(--key-gray__shadow) ;
+    font-weight: 700;
   
 }
 .keys--container .del ,.keys--container .reset{
-    background-color: hsl(225, 21%, 49%);
+    background-color: var(--key-DR__bg);
+    color: var(--text-DR);
+    box-shadow: 0rem 2px var(--key-DR__shadow) ;
+  
 }
 .keys--container .equal{
-    background-color:  hsl(6, 63%, 50%);
+    background-color:  var(--Key-equal__bg);
+    color: var(--text-equal);
+    box-shadow: 0rem 2px var(--Key-equal__shadow) ;
+  
 }
 .reset{
     grid-column: 1/3;
@@ -177,6 +248,10 @@ border: none;
 .equal{
     grid-column: 3/-1;
   
+}
+.is-depressed{
+    background-color: red;
+    /* display: none; */
 }
 @media (min-width:992px){
     .calculator{

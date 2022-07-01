@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
+  <!-- in our js, we set a class on the html above,the class name is dynamically set
+  by the parameter we passed in the button onclick methos, using the setTheme function in js -->
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
@@ -35,9 +37,9 @@
       </ul>
 
       <div class="theme--box__circles">
-        <div class="theme--box__circle1"></div>
-        <div class="theme--box__circle2"></div>
-        <div class="theme--box__circle3"></div>
+        <button class="theme--box__circle1 theme1" onclick="setTheme('theme2')"></button>
+        <button class="theme--box__circle2 theme2" onclick="setTheme('theme3')"></button>
+        <button class="theme--box__circle3 theme3" onclick="setTheme('theme1')"></button>
       </div>
     </div>
 
@@ -47,7 +49,7 @@
 
 <section class="display">
   <div class="display--input">
-    <p class="display--input__text">399,981</p>
+    <p class="display--input__text">0</p>
   </div>
 
 </section>
