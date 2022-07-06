@@ -254,8 +254,8 @@ border: none;
     /* display: none; */
 }
 .keys--operator:hover{
-background-color: pink;
-transition: 1s ease all;
+background-color: rgb(187, 175, 177);
+transition: .4 ease all;
 }
 @media (min-width:992px){
     .calculator{
