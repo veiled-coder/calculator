@@ -4,6 +4,7 @@ const key1=document.querySelector(".theme--box__circle1");
 const key2=document.querySelector(".theme--box__circle2");
 const key3=document.querySelector(".theme--box__circle3");
 const operators=document.getElementsByClassName('keys--operator');
+const operatorArray=Array.from(operators);
 const display=document.querySelector('.display--input__text');
 
 // trying to loop through operators variables as getelementbyclassname produces an array of classnames;
@@ -88,16 +89,8 @@ display.textContent=displayedNum+"."
 }
 
 if (action === 'add' ||action === 'subtract' ||action === 'multiply' ||action === 'divide') {
-   for (i=0;i<operators.length;i++){
-      // i+=operators[i];
-   operators[i].style.backgroundColor="red";
-   
-   }
-   console.log(operators);
-   console.log('operation key was pressed');
- }
-
-
-
+//   operators.style.backgroundColor="red";
+  
+}
 })
 

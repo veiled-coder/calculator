@@ -253,6 +253,10 @@ border: none;
     background-color: red;
     /* display: none; */
 }
+.keys--operator:hover{
+background-color: pink;
+transition: 1s ease all;
+}
 @media (min-width:992px){
     .calculator{
         height: 70vh;
