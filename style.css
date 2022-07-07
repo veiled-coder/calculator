@@ -208,6 +208,9 @@ h4 {
   box-shadow: 0rem 2px var(--key-gray__shadow);
   font-weight: 700;
 }
+.keys--container button:active {
+  background-color: hsl(0, 0%, 64%);
+}
 .keys--container .del,
 .keys--container .reset {
   background-color: var(--key-DR__bg);
