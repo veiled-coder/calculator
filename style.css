@@ -232,7 +232,7 @@ h4 {
   background-color: red;
   /* display: none; */
 }
-.keys--operator:hover {
+.keys--operator:active {
   background-color: rgb(187, 175, 177);
   transition: 0.4 ease all;
 }
