@@ -3,11 +3,37 @@ const keys=calculator.querySelector(".calculator__keys");
 const key1=document.querySelector(".theme--box__circle1");
 const key2=document.querySelector(".theme--box__circle2");
 const key3=document.querySelector(".theme--box__circle3");
-const operators=document.getElementsByClassName('keys--operator');
-const operatorArray=Array.from(operators);
+const operators=document.querySelectorAll('.keys--operator');
+// const operatorArray=Array.from(operators);
 const display=document.querySelector('.display--input__text');
+for (i=0; i<operators.length;i++){
+   operators[i].addEventListener("mousedown",mouseDown);
+   operators[i].addEventListener("mouseup",mouseUp);
 
-// trying to loop through operators variables as getelementbyclassname produces an array of classnames;
+
+}
+keys.addEventListener('click',function(e){
+   e.preventDefault();
+})
+
+function mouseDown(){
+
+console.log('mousedown');
+// document.documentElement.style.setProperty('--operator','var(--operator-clicked)')
+
+this.style.backgroundColor="var(--operator-clicked)";
+
+}
+
+function mouseUp(){
+// this.classList.remove('is-depressed')
+this.style.backgroundColor="var(--operator)"
+   
+// document.documentElement.style.setProperty('--operator','var(--operator)')
+
+console.log('mouseup');
+};
+
 
 
 // keys.addEventListener("click",e=>{

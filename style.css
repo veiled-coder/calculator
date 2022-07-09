@@ -30,8 +30,9 @@ html {
     --text-keypad__color:hsl(221,14%,31%);
     --text-theme:hsl(0,0%,100%);
     --text-equal:hsl(0,0%,100%);
-    --text-DR:hsl(0,0%,100%);
-
+    --text-DR:rgb(223, 201, 201);
+    --operator-clicked:rgb(218, 206, 194);
+    --operator:hsl(30,25%,89%);
 
 }
 :root.theme2{
@@ -48,6 +49,9 @@ html {
     --text-equal:hsl(0,0%,100%);
     --text-DR:hsl(0,0%,100%);
     --text-keypad__color:hsl(60,10%,19%);
+    /* --operator-clicked:rgb(178, 247, 178); */
+    --operator:hsl(45,7%,89%);
+    --operator-clicked:rgba(55, 127, 134, 0.322);
    
 
 }
@@ -65,9 +69,15 @@ html {
     --text-equal:hsl(198,20%,13%);
     --text-DR:hsl(0,0%,100%);
     --text-keypad__color:hsl(52,100%,62%);
+    --operator-clicked:rgba(28, 245, 209, 0.616);
+    --operator:hsl(268,47%,21%);
+     
+    
+  
    
 
 }
+
 .calculator{
     height: 90vh;
     max-width: 50rem;
@@ -253,10 +263,7 @@ border: none;
     background-color: red;
     /* display: none; */
 }
-.keys--operator:hover{
-background-color: rgb(187, 175, 177);
-transition: .4 ease all;
-}
+
 @media (min-width:992px){
     .calculator{
         height: 70vh;
