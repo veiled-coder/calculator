@@ -5,16 +5,16 @@ const key2=document.querySelector(".theme--box__circle2");
 const key3=document.querySelector(".theme--box__circle3");
 const operators=document.querySelectorAll('.keys--operator');
 // const operatorArray=Array.from(operators);
-const display=document.querySelector('.display--input__text');
-for (i=0; i<operators.length;i++){
-   operators[i].addEventListener("mousedown",mouseDown);
-    operators[i].addEventListener("mouseup",mouseUp);
-    operators[i].addEventListener("keydown",keyDown);
-    operators[i].addEventListener("keyup",keyUp);
+// const display=document.querySelector('.display--input__text');
+// for (i=0; i<operators.length;i++){
+//    operators[i].addEventListener("mousedown",mouseDown);
+//     operators[i].addEventListener("mouseup",mouseUp);
+//     operators[i].addEventListener("keydown",keyDown);
+//     operators[i].addEventListener("keyup",keyUp);
 
 
 
-}
+// }
 
 
 
@@ -36,25 +36,6 @@ this.style.backgroundColor="var(--operator)"
 console.log('mouseup');
 };
 
-function keyDown(){
-
-
-   // document.documentElement.style.setProperty('--operator','var(--operator-clicked)')
-   
-   this.style.backgroundColor="var(--operator-clicked)";
-   
-   }
-
-
-   function keyUp(){
-      // this.classList.remove('is-depressed')
-      this.style.backgroundColor="var(--operator)"
-         
-      // document.documentElement.style.setProperty('--operator','var(--operator)')
-      
-      console.log('mouseup');
-      };
-      
 // keys.addEventListener("click",e=>{
 
 // const key=e.target;

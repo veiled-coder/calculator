@@ -77,8 +77,11 @@ html {
    
 
 }
-
-.calculator{
+.keys--operator:hover{
+    transition: 2s all ease;
+    background-color: yellow;
+}
+calculator{
     height: 90vh;
     max-width: 50rem;
     width: 90%;
