@@ -8,13 +8,15 @@ const operators=document.querySelectorAll('.keys--operator');
 const display=document.querySelector('.display--input__text');
 for (i=0; i<operators.length;i++){
    operators[i].addEventListener("mousedown",mouseDown);
-   operators[i].addEventListener("mouseup",mouseUp);
+    operators[i].addEventListener("mouseup",mouseUp);
+    operators[i].addEventListener("keydown",keyDown);
+    operators[i].addEventListener("keyup",keyUp);
+
 
 
 }
-keys.addEventListener('click',function(e){
-   e.preventDefault();
-})
+
+
 
 function mouseDown(){
 
@@ -34,8 +36,25 @@ this.style.backgroundColor="var(--operator)"
 console.log('mouseup');
 };
 
+function keyDown(){
 
 
+   // document.documentElement.style.setProperty('--operator','var(--operator-clicked)')
+   
+   this.style.backgroundColor="var(--operator-clicked)";
+   
+   }
+
+
+   function keyUp(){
+      // this.classList.remove('is-depressed')
+      this.style.backgroundColor="var(--operator)"
+         
+      // document.documentElement.style.setProperty('--operator','var(--operator)')
+      
+      console.log('mouseup');
+      };
+      
 // keys.addEventListener("click",e=>{
 
 // const key=e.target;
@@ -116,7 +135,7 @@ display.textContent=displayedNum+"."
 
 if (action === 'add' ||action === 'subtract' ||action === 'multiply' ||action === 'divide') {
 //   operators.style.backgroundColor="red";
-  
+console.log('happy');  
 }
 })
 
