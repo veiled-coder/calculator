@@ -31,7 +31,7 @@ html {
     --text-theme:hsl(0,0%,100%);
     --text-equal:hsl(0,0%,100%);
     --text-DR:rgb(223, 201, 201);
-    --operator-clicked:rgb(218, 206, 194);
+    --operator-clicked:hsla(221, 37%, 70%, 0.897);
    
 }
 

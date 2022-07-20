@@ -4,7 +4,7 @@ const key1=document.querySelector(".theme--box__circle1");
 const key2=document.querySelector(".theme--box__circle2");
 const key3=document.querySelector(".theme--box__circle3");
 const operators=document.querySelectorAll('.keys--operator');
-const display=document.querySelector(".display--input__text");
+const display=calculator.querySelector(".display--input__text");
 
 
 
@@ -63,4 +63,5 @@ display.textContent=displayedNum+"."
 if (action === 'add' ||action === 'subtract' ||action === 'multiply' ||action === 'divide') {
  
 }
+
 })
