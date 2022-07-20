@@ -32,9 +32,9 @@ html {
     --text-equal:hsl(0,0%,100%);
     --text-DR:rgb(223, 201, 201);
     --operator-clicked:rgb(218, 206, 194);
-    --operator:hsl(30,25%,89%);
-
+   
 }
+
 :root.theme2{
     --main-bg:hsl(0,0%,90%);
     --keypad-bg:hsl(0,5%,81%);
@@ -50,7 +50,6 @@ html {
     --text-DR:hsl(0,0%,100%);
     --text-keypad__color:hsl(60,10%,19%);
     /* --operator-clicked:rgb(178, 247, 178); */
-    --operator:hsl(45,7%,89%);
     --operator-clicked:rgba(55, 127, 134, 0.322);
    
 
@@ -70,18 +69,15 @@ html {
     --text-DR:hsl(0,0%,100%);
     --text-keypad__color:hsl(52,100%,62%);
     --operator-clicked:rgba(28, 245, 209, 0.616);
-    --operator:hsl(268,47%,21%);
-     
+   
     
   
    
 
 }
-.keys--operator:hover{
-    transition: 2s all ease;
-    background-color: yellow;
-}
-calculator{
+
+
+.calculator{
     height: 90vh;
     max-width: 50rem;
     width: 90%;
@@ -242,6 +238,10 @@ border: none;
     box-shadow: 0rem 2px var(--key-gray__shadow) ;
     font-weight: 700;
   
+}
+.keys--operator:active{
+    background-color: var(--operator-clicked);
+    transition: 0.4 ease all;
 }
 .keys--container .del ,.keys--container .reset{
     background-color: var(--key-DR__bg);
